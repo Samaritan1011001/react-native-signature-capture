@@ -31,7 +31,7 @@
 	_showTitleLabel = YES;
 	if ((self = [super init])) {
 		_border = [CAShapeLayer layer];
-		_border.strokeColor = [UIColor blackColor].CGColor;
+		_border.strokeColor = [UIColor colorWithRed:35/255.f green:46/255.f blue:61/255.f alpha:1.f].CGColor;
 		_border.fillColor = nil;
 		_border.lineDashPattern = @[@4, @2];
 
@@ -77,7 +77,7 @@
 				[titleLabel setText:@"x_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"];
 				[titleLabel setLineBreakMode:NSLineBreakByClipping];
 				[titleLabel setTextAlignment: NSTextAlignmentCenter];
-				[titleLabel setTextColor:[UIColor colorWithRed:200/255.f green:200/255.f blue:200/255.f alpha:1.f]];
+				[titleLabel setTextColor:[UIColor whiteColor]];
 				//[titleLabel setBackgroundColor:[UIColor greenColor]];
 				[sign addSubview:titleLabel];
 			}
@@ -94,7 +94,7 @@
 
 				saveButton.frame = CGRectMake(sign.bounds.size.width - buttonSize.width,
 				                              0, buttonSize.width, buttonSize.height);
-				[saveButton setBackgroundColor:[UIColor colorWithRed:250/255.f green:250/255.f blue:250/255.f alpha:1.f]];
+				[saveButton setBackgroundColor:[UIColor colorWithRed:35/255.f green:46/255.f blue:61/255.f alpha:1.f]];
 				[sign addSubview:saveButton];
 
 
@@ -106,7 +106,7 @@
 				[clearButton setTitle:@"Reset" forState:UIControlStateNormal];
 
 				clearButton.frame = CGRectMake(0, 0, buttonSize.width, buttonSize.height);
-				[clearButton setBackgroundColor:[UIColor colorWithRed:250/255.f green:250/255.f blue:250/255.f alpha:1.f]];
+				[clearButton setBackgroundColor:[UIColor colorWithRed:35/255.f green:46/255.f blue:61/255.f alpha:1.f]];
 				[sign addSubview:clearButton];
 			}
 		}
@@ -119,7 +119,7 @@
 				[titleLabel setText:@"x_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"];
 				[titleLabel setLineBreakMode:NSLineBreakByClipping];
 				[titleLabel setTextAlignment: NSTextAlignmentLeft];
-				[titleLabel setTextColor:[UIColor colorWithRed:200/255.f green:200/255.f blue:200/255.f alpha:1.f]];
+				[titleLabel setTextColor:[UIColor whiteColor]];
 				//[titleLabel setBackgroundColor:[UIColor greenColor]];
 				[sign addSubview:titleLabel];
 			}
@@ -136,7 +136,7 @@
 				CGSize buttonSize = CGSizeMake(55, 80.0); //Width/Height is swapped
 
 				saveButton.frame = CGRectMake(sign.bounds.size.width - buttonSize.width, sign.bounds.size.height - buttonSize.height, buttonSize.width, buttonSize.height);
-				[saveButton setBackgroundColor:[UIColor colorWithRed:250/255.f green:250/255.f blue:250/255.f alpha:1.f]];
+				[saveButton setBackgroundColor:[UIColor colorWithRed:35/255.f green:46/255.f blue:61/255.f alpha:1.f]];
 				[sign addSubview:saveButton];
 
 				//Clear button
@@ -148,7 +148,7 @@
 				[clearButton setTitle:@"Reset" forState:UIControlStateNormal];
 
 				clearButton.frame = CGRectMake(sign.bounds.size.width - buttonSize.width, 0, buttonSize.width, buttonSize.height);
-				[clearButton setBackgroundColor:[UIColor colorWithRed:250/255.f green:250/255.f blue:250/255.f alpha:1.f]];
+				[clearButton setBackgroundColor:[UIColor colorWithRed:35/255.f green:46/255.f blue:61/255.f alpha:1.f]];
 				[sign addSubview:clearButton];
 			}
 		}
